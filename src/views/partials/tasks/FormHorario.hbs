@@ -1,0 +1,33 @@
+<table>
+  <thead>
+    <tr>
+      <th>Num</th>
+      <th>Paciente</th>
+      <th>Horario</th>
+      <th>Operaciones</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    {{#each horarios}}
+      <tr>
+        <td>
+          {{@index}}
+
+        </td>
+        <td>
+          {{paciente}}
+        </td>
+        <td>
+          {{horario}}
+        </td>
+        <td>
+          <button>Hecho</button>
+          <a href="/deletehorario/{{_id}}">Borrar</a>
+          <a href="/edithorarios/{{_id}}">Editar</a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

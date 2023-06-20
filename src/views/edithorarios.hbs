@@ -1,0 +1,17 @@
+<form action="/edithorarios/{{horarios._id}}" method="POST">
+
+  <input
+    type="text"
+    name="horario"
+    placeholder="titulo"
+    value="{{horarios.horario}}"
+  />
+
+  <textarea
+    name="paciente"
+    rows="3"
+    placeholder="agrega una descripcion"
+  >{{horarios.paciente}}</textarea>
+
+  <button>Update</button>
+</form>

@@ -1,0 +1,33 @@
+<table>
+  <thead>
+    <tr>
+      <th>Num</th>
+      <th>Titulo</th>
+      <th>Descripcion</th>
+      <th>Operaciones</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    {{#each tasks}}
+      <tr>
+        <td>
+          {{@index}}
+
+        </td>
+        <td>
+          {{titulo}}
+        </td>
+        <td>
+          {{descripcion}}
+        </td>
+        <td>
+          <a href="/toogleDone">Done</a>
+          <a href="/delete/{{_id}}">Borrar</a>
+          <a href="/edit/{{_id}}">Editar</a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
