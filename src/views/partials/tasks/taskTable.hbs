@@ -23,9 +23,14 @@
           {{descripcion}}
         </td>
         <td>
-          <a href="/toogleDone">Done</a>
-          <a href="/delete/{{_id}}">Borrar</a>
-          <a href="/edit/{{_id}}">Editar</a>
+          {{#if done}}
+            <a href="/tasks/{{_id}}/toggleDone">Undone</a>
+          {{else}}
+            <a href="/tasks/{{_id}}/toggleDone">Done</a>
+          {{/if}}
+
+          <a href="/tasks/{{_id}}/delete">Borrar</a>
+          <a href="/tasks/{{_id}}/edit">Editar</a>
         </td>
       </tr>
     {{/each}}
