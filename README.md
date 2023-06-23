@@ -1,2 +1,2 @@
-Crear carpeta .env
-Definir variable "MONGODB_URI" con las credenciales pertinentes de tu base de datos MongoDB
+Create .env folder
+Define variable "MONGODB_URI" with your MongoDB credentials
